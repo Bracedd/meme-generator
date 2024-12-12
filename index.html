@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Meme Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Random Meme Generator</h1>
+      <p>Enter your text, click generate and have fun!  </p>
+      <p class="lock-img">Want the same image, but different text?, lock the image!</p>
+    </header>
+
+    <section id="meme-creator">
+      <div>
+        <input type="text" id="top-text" placeholder="Top Text">
+        <input type="text" id="bottom-text" placeholder="Bottom Text">
+      </div>
+
+      <button id="generate-btn">Generate Meme</button>
+      <button id="lock-btn">Lock Image</button>
+      <button id="download-btn" class="hidden" >Download Meme</button>
+
+      <div id="meme-preview">
+        <canvas id="meme-canvas" width="500" height="500"></canvas>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
